@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- 
+        <input type="button">
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+        <input type="password">
+        <input type="radio">
+        <input type="range">
+        <input type="reset">
+        <input type="search">
+        <input type="submit">
+        <input type="tel">
+        <input type="text">
+        <input type="time">
+        <input type="url">
+        <input type="week">    
+    -->
+
+    <form action="register.php">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" />
+      </div>
+
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" />
+      </div>
+
+      <div>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" />
+      </div>
+
+      <div>
+        <label for="file">File</label>
+        <input type="file" id="file" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+
+      <div>
+        <label for="intro">Tell About Yourself</label>
+        <textarea id="intro" cols="30" rows="7"></textarea>
+      </div>
+      <div>
+        <p>Best programming language</p>
+        <input type="radio" id="html" name="programming" />
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="programming" />
+        <label for="css">CSS</label>
+        <input type="radio" id="js" name="programming" />
+        <label for="js">JS</label>
+      </div>
+
+      <div>
+        <p>Best programming language</p>
+        <input type="checkbox" id="html-checkbox" />
+        <label for="html-checkbox">HTML</label>
+        <input type="checkbox" id="css-checkbox" />
+        <label for="css-checkbox">CSS</label>
+        <input type="checkbox" id="js-checkbox" />
+        <label for="js-checkbox">JS</label>
+      </div>
+
+      <div>
+        <label for="cities">Cities</label>
+        <select id="cities">
+          <option value="16">Bursa</option>
+          <option value="34">İstanbul</option>
+        </select>
+      </div>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Save</button>
+    </form>
+  </body>
+</html>
