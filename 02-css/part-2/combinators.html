@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div ~ p {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>1. Paragraph</p>
+    <div>
+      <p>2. Paragraph</p>
+      <p>3. Paragraph</p>
+      <section>
+        <p>4. Paragraph</p>
+      </section>
+    </div>
+    <p>5. Paragraph</p>
+    <p>6. Paragraph</p>
+
+    <!-- Combinators -->
+
+    <!-- Descendant Selector -->
+    <!-- <style>
+        div p {
+          background-color: red;
+        }
+      </style> -->
+
+    <!-- Child Selector -->
+    <!-- <style>
+        div > p {
+          background-color: red;
+        }
+      </style> -->
+
+    <!-- Adjacent Sibling Selector -->
+    <!-- <style>
+        div + p {
+          background-color: red;
+        }
+      </style> -->
+
+    <!-- General Sibling Selector -->
+    <!-- <style>
+        div ~ p {
+          background-color: red;
+        }
+      </style> -->
+  </body>
+</html>
