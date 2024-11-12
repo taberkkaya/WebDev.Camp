@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: "Oswald", sans-serif;
+    }
+    #show-case {
+      /* background-color: #2e4c6d; */
+      background: url("bg-img1.jpg");
+      background-position: center right;
+      color: #fff;
+      width: 100%;
+      height: 300px;
+      padding: 10px;
+    }
+    #how-it-works {
+      background-color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #how-it-works h2 {
+      color: #3e4555;
+      font-size: 30px;
+    }
+
+    .main-header {
+      background-color: #fc997f;
+      padding: 8px 16px;
+    }
+    .main-nav {
+      display: inline-block;
+      width: calc(100% - 110px);
+      text-align: right;
+      font-family: "Edu AU VIC WA NT Pre", cursive;
+    }
+    .main-nav__items {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .main-nav__item {
+      display: inline-block;
+      margin: 0px 10px;
+    }
+    .main-header__logo {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 21px;
+    }
+    .main-nav__item a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .main-nav__item a:hover,
+    .main-nav__item a:hover::before {
+      color: #2e4c6d;
+    }
+    .main-nav__item a:active,
+    .main-nav__item a:active::before {
+      color: #fff;
+    }
+    .main-nav__item a::before {
+      content: "\2022";
+      color: #fff;
+      padding-right: 5px;
+    }
+    .main-nav__item__login a {
+      color: #fff;
+      background-color: #2e4c6d;
+      padding: 4px 16px;
+      border-radius: 8px;
+      border: 2px solid #fff;
+    }
+
+    .main-nav__item__login a::before {
+      content: none;
+    }
+
+    .main-nav__item__login a:hover {
+      color: #2e4c6d;
+      border: 2px solid #2e4c6d;
+      background-color: #fff;
+    }
+
+    .row {
+      margin-bottom: 20px;
+    }
+
+    .col-3 {
+      display: inline-block;
+      width: 30%;
+      padding: 16px;
+      margin: 8px;
+    }
+
+    .icon-box h3 {
+      color: #2e4c6d;
+      font-size: 26px;
+    }
+
+    .icon-box i {
+      color: #fc997c;
+    }
+
+    .col-2 {
+      display: inline-block;
+      width: calc(50% - 2px);
+      height: 350px;
+      background-color: brown;
+    }
+
+    .features__left {
+      background: url("bg-img2.jpeg");
+      background-position: top center;
+      background-size: cover;
+    }
+
+    .features__right {
+      background-color: #edf5f7;
+      padding: 40px;
+      vertical-align: top;
+    }
+
+    #features a {
+      background-color: #fc997c;
+      color: #fff;
+      padding: 7px 15px;
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+      border: 1px solid #fc997c;
+      border-radius: 3px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    #features a:hover {
+      border: 1px solid #fc997c;
+      color: #fc997c;
+      background-color: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+    }
+
+    .plan {
+      text-align: center;
+      padding: 5px;
+      width: 33.3%;
+      float: left;
+    }
+
+    .plan__badge {
+      background-color: #fff;
+      color: #fc997c;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .plan__features {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .plan__features li {
+      margin: 6px 0px;
+    }
+
+    .recomended_plan {
+      color: #fff;
+      background-color: #396eb0 !important;
+    }
+
+    .inner-plan {
+      background-color: #edf5f7;
+      padding: 25px 10px;
+      border-radius: 8px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <header class="main-header">
+      <a href="#" class="main-header__logo">Movie App</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="#">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="main-nav__item main-nav__item__login">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="show-case">
+        <h1>Welcome!</h1>
+      </section>
+      <section id="how-it-works">
+        <div class="row">
+          <h2>How It Works</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+            quisquam inventore quasi tempore sunt, ut vero corporis earum,
+            blanditiis similique, minus iste! Amet, molestiae corporis!
+          </p>
+        </div>
+        <div class="row">
+          <div class="icon-box col-3">
+            <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptate, nulla. Nesciunt sunt voluptatem provident quasi?
+            </p>
+          </div>
+          <div class="icon-box col-3">
+            <i class="fa-brands fa-buffer fa-3x"></i>
+            <h3>Choose a Plan</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptate, nulla. Nesciunt sunt voluptatem provident quasi?
+            </p>
+          </div>
+          <div class="icon-box col-3">
+            <i class="fa-regular fa-face-smile fa-3x"></i>
+            <h3>Enjoy</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptate, nulla. Nesciunt sunt voluptatem provident quasi?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h3>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit, cum!
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+              nostrum iste molestias blanditiis quidem non voluptate beatae
+              harum officia unde doloremque asperiores quam eius distinctio
+              facilis, consequatur minima totam magnam!
+            </p>
+            <a href="#">View Features</a>
+          </div>
+        </div>
+      </section>
+      <section id="plans">
+        <div class="row">
+          <h2 class="section-title">Lorem ipsum dolor sit.</h2>
+          <div class="container clearfix">
+            <div class="plan">
+              <div class="inner-plan">
+                <h2>Free</h2>
+                <h3>0/month</h3>
+                <ul class="plan__features">
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                </ul>
+                <div class="">
+                  <button>Choose Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="plan">
+              <div class="inner-plan recomended_plan">
+                <h2 class="plan__badge">Recomended</h2>
+                <h3>Basic</h3>
+                <h3>20$/month</h3>
+                <ul class="plan__features">
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                </ul>
+                <div class="">
+                  <button>Choose Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="plan">
+              <div class="inner-plan">
+                <h2>Premium</h2>
+                <h3>50$/month</h3>
+                <ul class="plan__features">
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                </ul>
+                <div class="">
+                  <button>Choose Plan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
