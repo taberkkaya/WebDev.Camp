@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Attribute Selector */
+      /* a[target] {
+        background-color: red;
+      }
+
+      [class] {
+        background-color: blue;
+      } */
+
+      /* Attribute Value Selector */
+      /* [class="active"] {
+        background-color: blue;
+      } */
+      /* a[class="active"] {
+        background-color: blue;
+      } */
+
+      /* Attribute '*' Selector */
+      /* <span class="active-span text">text</span> */
+      /* [class*="active"] {
+        background-color: blue;
+      } */
+
+      /* Attribute '~' Selector */
+      /* [class~="active"] {
+        background-color: blue;
+      } */
+
+      /* Attribute '|' Selector */
+      /* <span class="active-span text">text</span> */
+      /* [class|="active"] {
+        background-color: blue;
+      } */
+
+      /* Attribute '^' Selector */
+      /* <span class="active span text">text</span> */
+      /* [class^="active"] {
+        background-color: blue;
+      } */
+
+      /* Attribute '$' Selector */
+      /* <span class="span text active">text</span> */
+      [class$="active"] {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="span text active">text</span>
+    <nav>
+      <a href="" target="_blank">A</a>
+      <a href="" class="active">B</a>
+      <a href="" class="link">C</a>
+    </nav>
+  </body>
+</html>

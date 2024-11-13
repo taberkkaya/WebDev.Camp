@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Oswald", serif;
 }
 
 main {
@@ -29,12 +30,13 @@ main {
   color: #629584;
   font-weight: bold;
   font-size: 20px;
+  font-family: "Edu AU VIC WA NT Pre", serif !important;
 }
 
 .main-nav {
   text-align: right;
   display: inline-block;
-  width: calc(100% - 110px);
+  width: calc(100% - 120px);
 }
 
 .main-nav__item {
@@ -109,6 +111,27 @@ main {
   margin-bottom: 40px;
 }
 
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-4 {
+  float: left;
+  width: 25%;
+}
+
+.col-3 {
+  float: left;
+  width: 33.3%;
+}
+
+.col-2 {
+  float: left;
+  width: 50%;
+}
+
 .section-title {
   text-align: center;
   margin-bottom: 40px;
@@ -118,19 +141,6 @@ main {
 
 .icon-box {
   color: #243642;
-}
-
-.col-3 {
-  display: inline-block;
-  padding: 16px;
-  margin: 8px;
-  width: 30%;
-}
-
-.col-2 {
-  display: inline-block;
-  width: calc(50% - 2px);
-  height: 350px;
 }
 
 #back-to-top {
@@ -161,6 +171,11 @@ main {
   float: inline-start;
 }
 
+.features__left,
+.features__right {
+  height: 350px;
+}
+
 .features__right {
   background-color: #629584;
   padding: 40px;
@@ -187,8 +202,6 @@ main {
 .plan {
   text-align: center;
   padding: 5px;
-  width: 33.3%;
-  float: left;
 }
 
 .plan__badge {
@@ -228,4 +241,52 @@ main {
 
 .plan__features li {
   margin: 6px 0;
+}
+
+.counter {
+  background: linear-gradient(to bottom, #387478 0%, #243642 100%);
+  text-align: center;
+  padding: 50px;
+}
+
+.counter__item {
+  font-size: 30px;
+  font-weight: 500px;
+  color: #e2f1e7;
+}
+
+.counter h4 {
+  margin: 0;
+  color: #e2f1e7;
+}
+
+.card {
+  background-color: #e2f1e7;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(36, 54, 66, 0.9);
+  /* position: relative;
+  top: 0; */
+  transition: all 0.3s;
+}
+
+.card:hover {
+  /* top: -10px; */
+  transform: translateY(-10px);
+}
+
+.card-img {
+  max-height: 350px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-container {
+  padding: 10px;
 }
