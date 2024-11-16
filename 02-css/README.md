@@ -266,4 +266,3 @@
   - [key-frames.html](https://github.com/taberkkaya/WebDev.Camp/tree/main/02-css/part-7/key-frames.html)
   - [example-animation.html](https://github.com/taberkkaya/WebDev.Camp/tree/main/02-css/part-7/example-animation.html)
   - [animate-css.html](https://github.com/taberkkaya/WebDev.Camp/tree/main/02-css/part-7/animate-css.html)
-- [README.md](https://github.com/taberkkaya/WebDev.Camp/tree/main/02-css/README.md)
