@@ -9,5 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "lightbox2": "^2.11.3",
+    "owl.carousel": "^2.3.4"
+  }
 }
