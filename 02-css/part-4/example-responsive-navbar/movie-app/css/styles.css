@@ -121,10 +121,6 @@ main {
     font-size: 1.5rem;
     padding: 10px;
   }
-  .main-nav__item__login {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media (min-width: 768px) {
