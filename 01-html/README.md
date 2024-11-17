@@ -1,8 +1,0 @@
-- [movie-app](https://github.com/taberkkaya/WebDev.Camp/tree/main/movie-app/)
-  - [app-1](https://github.com/taberkkaya/WebDev.Camp/tree/main/movie-app/app-1/)
-  - [app-2](https://github.com/taberkkaya/WebDev.Camp/tree/main/movie-app/app-2/)
-  - [app-3](https://github.com/taberkkaya/WebDev.Camp/tree/main/movie-app/app-3/)
-  - [app-4](https://github.com/taberkkaya/WebDev.Camp/tree/main/movie-app/app-4/)
-  - [app-5](https://github.com/taberkkaya/WebDev.Camp/tree/main/movie-app/app-5/)
-  - [app-6](https://github.com/taberkkaya/WebDev.Camp/tree/main/movie-app/app-6/)
-  - [app-7](https://github.com/taberkkaya/WebDev.Camp/tree/main/movie-app/app-7/)
