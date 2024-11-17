@@ -76,6 +76,10 @@ body {
     margin: 0 auto;
     width: 720px;
   }
+  .main-nav__item__login {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 992px) {

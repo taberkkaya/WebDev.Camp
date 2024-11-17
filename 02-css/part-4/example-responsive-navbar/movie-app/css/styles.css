@@ -118,7 +118,12 @@ main {
     height: 50vh;
   }
   #show-case .content {
-    font-size: 23px;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .main-nav__item__login {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -127,7 +132,7 @@ main {
     height: 60vh;
   }
   #show-case .content {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 
