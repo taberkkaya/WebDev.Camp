@@ -1,23 +1,32 @@
-//function constructor
-function Product(title, desc, price, stock) {
-  //prop
-  this.title = title;
-  this.desc = desc;
-  this.price = price;
-  this.stock = stock;
-  //method
-  this.display = function () {
-    return `title:${this.title}, desc:${this.desc}, price:${this.price}`;
+function Player(name) {
+  this.name = name;
+  this.totalScore = 0;
+
+  this.start = function () {
+    console.log(`${name} is in the game`);
   };
 
-  this.is_active = function () {
-    return this.stock > 0 ? true : false;
+  this.stop = function () {
+    console.log(`${name} left the game`);
+  };
+
+  this.pause = function () {
+    console.log(`${name} stopped the game`);
+  };
+
+  this.add_score = function (score) {
+    this.totalScore += score;
+  };
+
+  this.show_score = function () {
+    console.log(this.totalScore);
   };
 }
 
-//object
-const p1 = new Product("Samsung S24", "Phone", 1000, 15);
-const p2 = new Product("Samsung S23", "Phone", 990, -1);
+const p1 = new Player("Ataberk");
 
-console.log(p1.display());
-console.log(p2.is_active());
+p1.start();
+p1.stop();
+p1.add_score(100);
+p1.pause();
+p1.show_score();
