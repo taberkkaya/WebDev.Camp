@@ -11,6 +11,10 @@ function UI() {
   this.btnStart = document.querySelector(".btn-start");
   this.button_box = document.querySelector("#button-box");
   this.score_box = document.querySelector("#score-box");
+
+  this.time_text = document.querySelector(".time-text");
+  this.time_second = document.querySelector(".time-second");
+  this.time_line = document.querySelector(".time-line");
 }
 
 UI.prototype.showQuest = function (question) {
