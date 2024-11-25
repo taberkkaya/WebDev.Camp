@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const numbers = new Set([1, 2, 3]);
+      const numbers = new Set();
+      numbers.add(1);
+      numbers.add(2);
+      numbers.add(3);
+      numbers.add(3);
+      numbers.add("4");
+
+      //   const arr = [...numbers];
+      //   console.log(arr);
+      numbers.delete(1);
+      console.log(numbers.has(1));
+      //   numbers.clear();
+      //   console.log(numbers.values());
+
+      //for (let x of numbers.values()) {
+      for (let x of numbers) {
+        console.log(x);
+      }
+      console.log(numbers);
+    </script>
+  </body>
+</html>

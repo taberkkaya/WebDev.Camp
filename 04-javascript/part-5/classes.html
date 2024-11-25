@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //function constructor
+      function PersonES5(name, job, birthDay) {
+        this.name = name;
+        this.job = job;
+        this.birthDay = birthDay;
+        // this.age = function () {
+        //   let date = new Date().getFullYear();
+        //   return date - this.birthDay;
+        // };
+      }
+
+      PersonES5.prototype.age = function () {
+        let date = new Date().getFullYear();
+        return date - this.birthDay;
+      };
+
+      let person = new PersonES5("Ataberk Kaya", "Software Developer", 2001);
+      let person2 = new PersonES5("Ata Kaya", "No Job", 2001);
+
+      console.log(person);
+      console.log(person.age());
+
+      //class
+      class PersonES6 {
+        constructor(name, job, birthDay) {
+          this.name = name;
+          this.job = job;
+          this.birthDay = birthDay;
+          console.log("Obj created");
+        }
+
+        age() {
+          let date = new Date().getFullYear();
+          return date - this.birthDay;
+        }
+      }
+
+      let p1 = new PersonES6("Ataberk Kaya", "Software Developer", 2001);
+
+      console.log(p1);
+      console.log(p1.age());
+    </script>
+  </body>
+</html>

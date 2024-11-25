@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(name, job, birthDay) {
+          this.name = name;
+          this.job = job;
+          this.birthDay = birthDay;
+          console.log("Obj created");
+        }
+
+        calcAge() {
+          let date = new Date().getFullYear();
+          return date - this.birthDay;
+        }
+
+        get name() {
+          return this._name;
+        }
+
+        set name(value) {
+          if (value.length < 3) {
+            console.log("Name must be min 3 char");
+            return;
+          }
+          this._name = value;
+        }
+
+        get birthDay() {
+          return this._birthDay;
+        }
+        set birthDay(value) {
+          if (value < 1900 || value > new Date().getFullYear()) {
+            console.log("Wrong date");
+            return;
+          }
+          this._birthDay = value;
+        }
+      }
+
+      let p1 = new Person("Ataberk Kaya", "Software Developer", 2200);
+
+      console.log(p1);
+    </script>
+  </body>
+</html>
