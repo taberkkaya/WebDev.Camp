@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const msg = ["My", "name", "is", "John", "Cena"];
+      //   let result = "";
+      //   for (let x of msg) {
+      //     result += x + " ";
+      //   }
+
+      //   console.log(result);
+      //   console.log(...msg);
+
+      //   //
+      //   const arr1 = ["One", "Two"];
+      //   const arr2 = ["Three", "Four"];
+
+      //   const arr3 = [...arr1, ...arr2, "Five", "Six"];
+      //   console.log(arr3);
+
+      const numbers = [1, 2, 3];
+      //   const numbers2 = numbers; //ref
+      const numbers2 = [...numbers]; //val
+      numbers2[0] = 10;
+      console.log(numbers);
+      console.log(numbers2);
+
+      const user = {
+        username: "taberkkaya",
+        email: "taberkkaya@gmail.com",
+      };
+
+      const address = {
+        username: "taberkkaya2",
+        city: "Bursa",
+      };
+
+      console.log({ ...user, ...address });
+
+      //rest parameters
+      function total(...args) {
+        let result = 0;
+        for (let number of args) {
+          result += number;
+        }
+        return result;
+      }
+
+      console.log(total(1, 2, 3));
+      console.log(total(1, 2));
+      console.log(total(1, 2, 20, 21));
+
+      function showInfo(name, surname, ...address) {
+        console.log(name, surname, address);
+      }
+
+      showInfo("Ataberk", "Kaya", "Bursa", "Osmangazi");
+    </script>
+  </body>
+</html>

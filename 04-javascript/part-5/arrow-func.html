@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //ES5
+      //   function sayHi() {
+      //     console.log("Hello");
+      //   }
+
+      var sayHiES5 = function (name) {
+        console.log("Hello " + name);
+      };
+
+      //ES6 Arrow Func
+      //   const sayHiES6 = () => console.log("Hello");
+      const sayHiES6 = (name) => {
+        console.log("Hello " + name);
+      };
+
+      sayHiES5("Ataberk");
+      sayHiES6("Ataberk");
+
+      //ES5
+      var totalES5 = function (a, b) {
+        return a + b;
+      };
+      var resultES5 = totalES5(10, 20);
+      console.log(resultES5);
+
+      //ES6
+      //   const totalES6 = (a, b) => a + b;
+      const totalES6 = (a, b) => {
+        return a + b;
+      };
+      var resultES6 = totalES6(1, 2);
+      console.log(resultES6);
+    </script>
+  </body>
+</html>

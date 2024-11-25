@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+      //   const oddNumbers = [];
+      //   const evenNumbers = [];
+
+      //   for (let number of numbers) {
+      //     if (number % 2 == 1) {
+      //       oddNumbers.push(number);
+      //     }
+      //   }
+
+      //ES6
+
+      //   const oddNumberControl = (number) => number % 2 == 1;
+      //   const oddNumbers = numbers.filter(oddNumberControl);
+      //   const oddNumbers = numbers.filter((number) => number % 2 == 1);
+      const oddNumbers = numbers.map((number) => number % 2 == 1);
+
+      console.log(oddNumbers);
+
+      const product = [
+        { name: "Iphone 1", price: 1200 },
+        { name: "Iphone 2", price: 1300 },
+        { name: "Iphone 3", price: 1400 },
+        { name: "Iphone 4", price: 1500 },
+        { name: "Iphone 5", price: 1600 },
+      ];
+
+      //   const result = product.map((product) => product);
+
+      //   const filteredResult = product.filter((product) => product.price > 1300);
+      //   const result = filteredResult.map((product) => product.name);
+
+      //   const result = product
+      //     .filter((product) => product.price >= 1300)
+      //     .map((product) => product.name);
+
+      //   const result = product.find((product) => product.price > 1200);
+      const result = product.findIndex((product) => product.price > 1200);
+
+      console.log(result);
+    </script>
+  </body>
+</html>
