@@ -17,10 +17,10 @@
       crossorigin="anonymous"
     />
     <style>
-      .col-2 img {
-        height: 120px;
+      #neighbors img {
+        height: 20vh;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
 
       #details {
@@ -177,7 +177,7 @@
         let html = "";
         for (let country of countries) {
           html += `
-          <div class="col-2 mt-2">
+          <div class="col-12 col-lg-2 mt-2">
             <div class="card">
                 <img src="${country.flags.png}" class="card-img-top" />
                 <div card-body>
