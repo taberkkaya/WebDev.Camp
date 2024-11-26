@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // login
+      // posts
+      // create post
+      console.log("Start");
+      //   const login = (username, password) => {
+      //     setTimeout(() => {
+      //       return { username: username };
+      //     }, 1000);
+      //   };
+
+      const login = (username, password, callback) => {
+        setTimeout(() => {
+          callback({ username: username, email: "info@taberkkaya.com" });
+        }, 1000);
+      };
+
+      const getPostsByUsername = (username, callback) => {
+        setTimeout(() => {
+          callback(["Post 1", "Post 2", "Post 3"]);
+        }, 2000);
+      };
+
+      const getPostDetails = (post, callback) => {
+        setTimeout(() => {
+          callback("Post Details");
+        }, 1000);
+      };
+
+      login("taberkkaya", "123456", (user) => {
+        console.log(user);
+
+        getPostsByUsername(user.username, (posts) => {
+          console.log(posts);
+
+          getPostDetails(posts[0], (details) => {
+            console.log(details);
+          });
+        });
+      });
+
+      //  callback hell
+
+      console.log("End");
+    </script>
+  </body>
+</html>
