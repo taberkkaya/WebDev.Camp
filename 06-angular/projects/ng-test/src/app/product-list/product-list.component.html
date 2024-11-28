@@ -1,4 +1,49 @@
-<app-product></app-product>
-<app-product></app-product>
-<app-product></app-product>
-<app-product></app-product>
+<div *ngFor="let product of products">
+  <div class="card mb-3" *ngIf="product.isActive">
+    <div class="row">
+      <div class="col-3">
+        <img
+          src="{{ product.imgUrl }}"
+          alt=""
+          class="img-fluid rounded-start"
+        />
+      </div>
+      <div class="col-9">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">
+            {{ product.desc }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="alert alert-warning" *ngIf="products.length < 4">No Product</div> -->
+
+<div class="card mb-3" *ngIf="product.isActive">
+  <div class="row">
+    <div class="col-3">
+      <img
+        src="https://picsum.photos/id/237/200/300"
+        alt=""
+        class="img-fluid rounded-start"
+      />
+    </div>
+    <div class="col-9">
+      <div class="card-body">
+        <h5 class="card-title">Lorem</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          tenetur eos perferendis laudantium cumque similique minus est
+          exercitationem aliquid deserunt!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul *ngIf="productList.length > 1">
+  <li *ngFor="let p of productList">{{ p }}</li>
+</ul>

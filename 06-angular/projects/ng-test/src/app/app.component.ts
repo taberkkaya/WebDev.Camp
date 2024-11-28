@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'ng-test';
+  private title = 'Home Page';
+
+  getTitle() {
+    return this.title;
+  }
 }
