@@ -13,20 +13,4 @@ export class AppComponent {
   title = 'ng-app';
 
   constructor(private productService: ProductService) {}
-
-  createProduct() {
-    const product = {
-      id: 5,
-      name: 'Lorem, ipsum dolor.',
-      price: 2000,
-      imgUrl: '1.jpeg',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nobis?',
-      isActive: true,
-      categoryId: 1,
-    };
-
-    this.productService
-      .createProduct(product)
-      .subscribe((data) => console.log(data));
-  }
 }

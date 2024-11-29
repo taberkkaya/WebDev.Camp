@@ -1,23 +1,26 @@
 import { Component } from '@angular/core';
 import { CategoryRepository } from '../models/category.repository';
 import { Category } from '../models/category';
+import { CategoryService } from '../services/category.service';
 
 @Component({
   selector: 'category-list',
   standalone: false,
   templateUrl: './category-list.component.html',
   styleUrl: './category-list.component.css',
+  providers: [CategoryService],
 })
 export class CategoryListComponent {
   categories: Category[];
   selectedCategory?: Category | null;
-  categoryRepository: CategoryRepository;
-
   displayAll = true;
 
-  constructor() {
-    this.categoryRepository = new CategoryRepository();
-    this.categories = this.categoryRepository.getCategories();
+  constructor(private categoryService: CategoryService) {}
+
+  ngOnInit(): void {
+    this.categoryService
+      .getCategories()
+      .subscribe((data) => (this.categories = data));
   }
 
   selectCategory(category?: Category) {
