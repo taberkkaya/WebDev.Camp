@@ -1,3 +1,29 @@
+<div *ngIf="selectedProduct">
+  <div class="card mb-3">
+    <div class="row my-2">
+      <div class="col-3">
+        <img
+          class="img-fluid rounded-start"
+          src="/assets/images/{{ selectedProduct.imgUrl }}"
+          alt=""
+        />
+      </div>
+      <div class="col-9">
+        <div class="card-body">
+          <h5 class="card-title">{{ selectedProduct.name }}</h5>
+          <p class="card-text">
+            {{ selectedProduct.desc }}
+          </p>
+          <button (click)="unselectProduct()" class="btn btn-danger">
+            Unselect
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+</div>
+
 <div *ngIf="products.length > 0; else noProduct">
   <ng-template
     [ngTemplateOutlet]="productList"
@@ -22,6 +48,9 @@
             <p class="card-text">
               {{ product.desc }}
             </p>
+            <button (click)="selectProduct(product)" class="btn btn-primary">
+              Select
+            </button>
           </div>
         </div>
       </div>
