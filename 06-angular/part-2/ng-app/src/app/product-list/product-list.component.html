@@ -1,0 +1,34 @@
+<div *ngIf="products.length > 0; else noProduct">
+  <ng-template
+    [ngTemplateOutlet]="productList"
+    [ngTemplateOutletContext]="{ products: products }"
+  ></ng-template>
+</div>
+
+<ng-template #productList let-products="products">
+  <div *ngFor="let product of products">
+    <div class="card mb-3" *ngIf="product.isActive">
+      <div class="row my-2">
+        <div class="col-3">
+          <img
+            class="img-fluid rounded-start"
+            src="/assets/images/{{ product.imgUrl }}"
+            alt=""
+          />
+        </div>
+        <div class="col-9">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">
+              {{ product.desc }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #noProduct>
+  <div class="alert alert-warning">No Product</div>
+</ng-template>
