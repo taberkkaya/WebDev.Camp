@@ -11,10 +11,19 @@ import { ProductRepository } from '../models/product.repository';
 })
 export class ProductListComponent {
   products: Product[];
+  selectedProduct: Product | null;
   productRepository: ProductRepository;
 
   constructor() {
     this.productRepository = new ProductRepository();
     this.products = this.productRepository.getProducts();
+  }
+
+  selectProduct(product: Product) {
+    this.selectedProduct = product;
+  }
+
+  unselectProduct() {
+    this.selectedProduct = null;
   }
 }

@@ -1,9 +1,12 @@
 <app-navbar></app-navbar>
 
 <div class="container my-3">
+  <img src="../assets/images/1.jpeg" alt="" />
   <div class="row">
-    <div class="col-12">
-      <h1>{{ getTitle() }}</h1>
+    <div class="col-3">
+      <app-category-list></app-category-list>
+    </div>
+    <div class="col-9">
       <app-product-list></app-product-list>
     </div>
   </div>
