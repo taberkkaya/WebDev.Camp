@@ -3,9 +3,9 @@ import { Product } from './product';
 
 export class CategoryRepository {
   private categories: Category[] = [
-    { id: 1, name: 'Phone' },
-    { id: 2, name: 'PC' },
-    { id: 3, name: 'TV' },
+    { id: 1, name: '#Category 1' },
+    { id: 2, name: '#Category 2' },
+    { id: 3, name: '#Category 3' },
   ];
 
   getCategories(): Category[] {

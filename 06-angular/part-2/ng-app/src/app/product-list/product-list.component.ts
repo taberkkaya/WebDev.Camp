@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from '../models/product';
 import { ProductRepository } from '../models/product.repository';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'product-list',
@@ -11,18 +12,29 @@ import { ProductRepository } from '../models/product.repository';
 })
 export class ProductListComponent {
   products: Product[];
-  selectedProduct: Product | null;
+  // selectedProduct: Product | null;
   productRepository: ProductRepository;
 
-  constructor() {
+  constructor(private route: ActivatedRoute) {
     this.productRepository = new ProductRepository();
-    this.products = this.productRepository.getProducts();
+    // this.products = this.productRepository.getProducts();
   }
-  selectProduct(product: Product) {
-    this.selectedProduct = product;
-  }
+  // selectProduct(product: Product) {
+  //   this.selectedProduct = product;
+  // }
+  // unselectProduct() {
+  //   this.selectedProduct = null;
+  // }
 
-  unselectProduct() {
-    this.selectedProduct = null;
+  ngOnInit(): void {
+    this.route.params.subscribe((params) => {
+      if (params['categoryId']) {
+        this.products = this.productRepository.getProductsByCategoryId(
+          params['categoryId']
+        );
+      } else {
+        this.products = this.productRepository.getProducts();
+      }
+    });
   }
 }

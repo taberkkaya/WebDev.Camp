@@ -10,23 +10,23 @@ import { Category } from '../models/category';
 })
 export class CategoryListComponent {
   categories: Category[];
-  selectedCategory: Category | null;
+  selectedCategory?: Category | null;
   categoryRepository: CategoryRepository;
+
+  displayAll = true;
 
   constructor() {
     this.categoryRepository = new CategoryRepository();
     this.categories = this.categoryRepository.getCategories();
   }
 
-  selectCategory(category: Category) {
-    if (this.selectedCategory) {
-      if (this.selectedCategory != category) {
-        this.selectedCategory = category;
-      } else {
-        this.selectedCategory = null;
-      }
-    } else {
+  selectCategory(category?: Category) {
+    if (category) {
       this.selectedCategory = category;
+      this.displayAll = false;
+    } else {
+      this.selectedCategory = null;
+      this.displayAll = true;
     }
   }
 }
