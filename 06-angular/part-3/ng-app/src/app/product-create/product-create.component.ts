@@ -3,6 +3,7 @@ import { ProductService } from '../services/product.service';
 import { Router } from '@angular/router';
 import { CategoryService } from '../services/category.service';
 import { Category } from '../models/category';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-product-create',
@@ -36,51 +37,36 @@ export class ProductCreateComponent {
     });
   }
 
-  saveProduct() {
-    // name: any,
-    // price: any,
-    // imgUrl: any,
-    // desc: any,
-    // isActive: any,
-    // categoryId: any
-    // if (name.value == '' || name.value.length < 3) {
-    //   this.error = 'Name must be not empty and min 3 characters.';
-    //   return;
-    // }
-    // if (price.value == '') {
-    //   this.error = 'Price must be not empty.';
-    //   return;
-    // }
-    // if (desc.value == '') {
-    //   this.error = 'Description must be not empty.';
-    //   return;
-    // }
-    // if (imgUrl.value == '') {
-    //   this.error = 'Image url must be not empty.';
-    //   return;
-    // }
-    // if (categoryId.value == 0) {
-    //   this.error = 'Category must be selected.';
-    //   return;
-    // }
-    // const extensions = ['jpeg', 'jpg', 'png'];
-    // const extension = imgUrl.value.split('.').pop();
-    // if (extensions.indexOf(extension) == -1) {
-    //   this.error = 'Image extension must be jpeg, jpg or png';
-    //   return;
-    // }
-    // const product = {
-    //   id: 5,
-    //   name: name.value,
-    //   price: price.value,
-    //   imgUrl: imgUrl.value,
-    //   desc: desc.value,
-    //   isActive: isActive.checked,
-    //   categoryId: categoryId.value,
-    // };
-    // this.productService.createProduct(product).subscribe((data) => {
-    //   this.router.navigate(['/products']);
-    // });
+  saveProduct(form: NgForm) {
+    const extensions = ['jpeg', 'jpg', 'png'];
+    const extension = this.model.imgUrl.split('.').pop();
+    if (extensions.indexOf(extension) == -1) {
+      this.error = 'Image extension must be jpeg, jpg or png';
+      return;
+    }
+    if (this.model.categoryId == 0) {
+      this.error = 'Category must be selected.';
+      return;
+    }
+
+    const product = {
+      id: 5,
+      name: this.model.name,
+      price: this.model.price,
+      imgUrl: this.model.imgUrl,
+      desc: this.model.desc,
+      isActive: this.model.isActive,
+      categoryId: this.model.categoryId,
+    };
+
+    if (form.valid) {
+      this.productService.createProduct(product).subscribe((data) => {
+        this.router.navigate(['/products']);
+      });
+    } else {
+      this.error = 'Control form.';
+      return;
+    }
     console.log(this.model);
   }
 }
