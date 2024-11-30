@@ -1,14 +1,14 @@
-<!-- <product
-  [product]="selectedProduct"
-  (unselectEvent)="unselectProduct()"
-  *ngIf="selectedProduct"
-></product> -->
+<div *ngIf="!loading">
+  <div *ngIf="products.length > 0; else noProduct">
+    <ng-template
+      [ngTemplateOutlet]="productList"
+      [ngTemplateOutletContext]="{ products: products }"
+    ></ng-template>
+  </div>
+</div>
 
-<div *ngIf="products.length > 0; else noProduct">
-  <ng-template
-    [ngTemplateOutlet]="productList"
-    [ngTemplateOutletContext]="{ products: products }"
-  ></ng-template>
+<div class="spinner-border text-primary" role="status" *ngIf="loading">
+  <span class="visually-hidden">Loading...</span>
 </div>
 
 <ng-template #productList let-products="products">
