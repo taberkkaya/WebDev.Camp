@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AuthResponse } from '../models/auth-response';
-import { catchError, Subject, tap, throwError } from 'rxjs';
+import { BehaviorSubject, catchError, Subject, tap, throwError } from 'rxjs';
 import { User } from '../models/user';
 
 @Injectable({
@@ -10,7 +10,7 @@ import { User } from '../models/user';
 export class AuthService {
   api_key = 'AIzaSyCmD5_fWKh-APdBCFaZDDh-E3y0dOsDU70';
 
-  user = new Subject<User>();
+  user = new BehaviorSubject<User | null>(null);
 
   constructor(private http: HttpClient) {}
 
@@ -27,19 +27,12 @@ export class AuthService {
       )
       .pipe(
         tap((response) => {
-          // observable, subject => rxjs
-          let expirationDate = new Date(
-            new Date().getTime() + +response.expiresIn * 1000
-          );
-
-          const user = new User(
+          this.handleUser(
             response.email,
             response.localId,
             response.idToken,
-            expirationDate
+            response.expiresIn
           );
-          this.user.next(user);
-          console.log(user);
         }),
         catchError(this.handleError)
       );
@@ -59,21 +52,38 @@ export class AuthService {
       .pipe(
         tap((response) => {
           // observable, subject => rxjs
-          let expirationDate = new Date(
-            new Date().getTime() + +response.expiresIn * 1000
-          );
-
-          const user = new User(
+          this.handleUser(
             response.email,
             response.localId,
             response.idToken,
-            expirationDate
+            response.expiresIn
           );
-          this.user.next(user);
-          console.log(user);
         }),
         catchError(this.handleError)
       );
+  }
+
+  autoLogin() {
+    if (localStorage.getItem('user') == null) {
+      return;
+    }
+
+    const user = JSON.parse(localStorage.getItem('user') || '{}');
+    const loadedUser = new User(
+      user.email,
+      user.id,
+      user._token,
+      new Date(user._tokenExpirationDate)
+    );
+
+    if (loadedUser.token) {
+      this.user.next(loadedUser);
+    }
+  }
+
+  logout() {
+    this.user.next(null);
+    localStorage.removeItem('user');
   }
 
   private handleError(err: HttpErrorResponse) {
@@ -106,5 +116,20 @@ export class AuthService {
     }
 
     return throwError(() => message);
+  }
+
+  private handleUser(
+    email: string,
+    localId: string,
+    idToken: string,
+    expiresIn: string
+  ) {
+    // observable, subject => rxjs
+    const expirationDate = new Date(new Date().getTime() + +expiresIn * 1000);
+
+    const user = new User(email, localId, idToken, expirationDate);
+    this.user.next(user);
+    console.log(user);
+    localStorage.setItem('user', JSON.stringify(user));
   }
 }
