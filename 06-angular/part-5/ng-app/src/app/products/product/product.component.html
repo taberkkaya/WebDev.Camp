@@ -1,0 +1,32 @@
+<div *ngIf="!loading">
+  <div class="card mb-3" *ngIf="product; else noProduct">
+    <div class="row my-2">
+      <div class="col-3">
+        <img
+          class="img-fluid rounded-start"
+          src="/assets/images/{{ product.imgUrl }}"
+          alt=""
+        />
+      </div>
+      <div class="col-9">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">
+            {{ product.desc }}
+          </p>
+          <!-- <button (click)="unselectProduct()" class="btn btn-danger">
+            Unselect
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spinner-border text-primary" role="status" *ngIf="loading">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<ng-template #noProduct>
+  <div class="alert alert-warning">No Product</div>
+</ng-template>
