@@ -1,0 +1,15 @@
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\bin\Debug\net9.0\console-app.exe
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\bin\Debug\net9.0\console-app.deps.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\bin\Debug\net9.0\console-app.runtimeconfig.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\bin\Debug\net9.0\console-app.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\bin\Debug\net9.0\console-app.pdb
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\console-app.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\console-app.AssemblyInfoInputs.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\console-app.AssemblyInfo.cs
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\console-app.csproj.CoreCompileInputs.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\console-app.sourcelink.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\console-app.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\refint\console-app.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\console-app.pdb
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\console-app.genruntimeconfig.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\console-app\obj\Debug\net9.0\ref\console-app.dll
