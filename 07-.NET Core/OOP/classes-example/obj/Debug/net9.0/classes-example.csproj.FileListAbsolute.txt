@@ -1,0 +1,15 @@
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\classes-example.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\classes-example.AssemblyInfoInputs.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\classes-example.AssemblyInfo.cs
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\classes-example.csproj.CoreCompileInputs.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\classes-example.sourcelink.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\bin\Debug\net9.0\classes-example.exe
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\bin\Debug\net9.0\classes-example.deps.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\bin\Debug\net9.0\classes-example.runtimeconfig.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\bin\Debug\net9.0\classes-example.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\bin\Debug\net9.0\classes-example.pdb
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\classes-example.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\refint\classes-example.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\classes-example.pdb
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\classes-example.genruntimeconfig.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\classes-example\obj\Debug\net9.0\ref\classes-example.dll
