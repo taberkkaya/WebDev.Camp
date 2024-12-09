@@ -1,0 +1,15 @@
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\bin\Debug\net9.0\collections.exe
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\bin\Debug\net9.0\collections.deps.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\bin\Debug\net9.0\collections.runtimeconfig.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\bin\Debug\net9.0\collections.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\bin\Debug\net9.0\collections.pdb
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\collections.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\collections.AssemblyInfoInputs.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\collections.AssemblyInfo.cs
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\collections.csproj.CoreCompileInputs.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\collections.sourcelink.json
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\collections.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\refint\collections.dll
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\collections.pdb
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\collections.genruntimeconfig.cache
+C:\ProjectCollection\WebDev.Camp\07-.NET Core\OOP\collections\obj\Debug\net9.0\ref\collections.dll
