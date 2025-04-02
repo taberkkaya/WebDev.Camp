@@ -7,10 +7,6 @@
 - JavaScript
 - TypeScript
 
-## 📸 
-![Project Screenshot](https://example.com/screenshot1.png)
-![Project Screenshot](https://example.com/screenshot2.png)
-
 ## Projects
 Here are some live projects developed during this course:
 
