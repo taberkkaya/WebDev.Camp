@@ -1,5 +1,19 @@
 # WebDev.Camp
 
+## 🚀 Technologies
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- TypeScript
+
+## 📸 
+![Project Screenshot](https://example.com/screenshot1.png)
+![Project Screenshot](https://example.com/screenshot2.png)
+
+## Projects
+Here are some live projects developed during this course:
+
 - [Hotel Site](https://taberkkaya-hotel.netlify.app)
 - [Freelancer Site](https://taberkkaya-freelancer.netlify.app)
 - [News Site](https://taberkkaya-news.netlify.app)
@@ -11,15 +25,14 @@
 - [Quiz App](https://taberkkaya-quiz-app.netlify.app)
 - [Music Player](https://taberkkaya-music-player.netlify.app/)
 
-# Source
+## 📚 Source  
+📺 *[Sadık Turan's Udemy Profile](https://www.udemy.com/user/sadikturan/)* <br>  
+🐙 *[komple-web-gelistirme-dersleri](https://github.com/sadikturan/komple-web-gelistirme-dersleri)*
 
-- _[Sadık Turan's Udemy Profile](https://www.udemy.com/user/sadikturan/)_
-- _[komple-web-gelistirme-dersleri](https://github.com/sadikturan/komple-web-gelistirme-dersleri)_
-
-# Contents
+## 📚 Contents
 
 - [HTML](https://github.com/taberkkaya/WebDev.Camp/tree/main/01-html)
 - [CSS](https://github.com/taberkkaya/WebDev.Camp/tree/main/02-css)
-- [Boostrap](https://github.com/taberkkaya/WebDev.Camp/tree/main/03-boostrap)
+- [Bootstrap](https://github.com/taberkkaya/WebDev.Camp/tree/main/03-boostrap)
 - [JavaScript](https://github.com/taberkkaya/WebDev.Camp/tree/main/04-javascript)
 - [TypeScript](https://github.com/taberkkaya/WebDev.Camp/tree/main/05-typescript)
